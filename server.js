@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 
 app.get('/recipe',(req, res)=>{
-    
+    //.env
             //SECRET=cde3a0ff083343929ecca14981210330
             let urlName =`https://api.spoonacular.com/recipes/random?apiKey=${process.env.SECRET}`;
             
