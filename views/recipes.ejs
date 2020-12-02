@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+  <title>My Recipes</title>
+</head>
+<body>
+    
+<div class="jumbotron text-center">
+    <div class="container">
+        <i class="fas fa-key fa-6x"></i>
+        <h1 class="display-3"><%= rec.title %></h1>
+        <p class="srcret-text"><%= rec.analyzedInstructions[0].steps[0].ingredients %></p>
+        <p><img src="<%= rec.image %>" width="550" height="370" ></p>
+        <hr>
+    </div>
+</div>
+
+
+</body>
+</html>
